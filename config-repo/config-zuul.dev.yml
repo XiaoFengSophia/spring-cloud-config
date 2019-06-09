@@ -1,0 +1,13 @@
+### 配置网关反向代理    注：Zuul 默认开启了 Ribbon本地负载均衡功能
+zuul: 
+  routes:
+    api-a:
+     ### 以 /api-member/访问转发到会员服务(代理地址)
+      path: /api-member/**
+      #注册在Eureka中member服务别名(实际地址)
+      serviceId: zxf-lancoo-member
+    api-b:
+        ### 以 /api-order/访问转发到订单服务(代理地址)
+      path: /api-order/**
+      #注册在Eureka中order服务别名(实际地址)
+      serviceId: zxf-lancoo-order
