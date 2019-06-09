@@ -11,3 +11,8 @@ zuul:
       path: /api-order/**
       #注册在Eureka中order服务别名(实际地址)
       serviceId: zxf-lancoo-order
+   api-c:
+    ### 以 /api-pay/访问转发到支付服务(代理地址)
+  path: /api-pay/**
+  #注册在Eureka中pay服务别名(实际地址)
+  serviceId: zxf-lancoo-zxfprovider
