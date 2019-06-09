@@ -11,5 +11,3 @@ zuul:
       path: /api-order/**
       #注册在Eureka中order服务别名(实际地址)
       serviceId: zxf-lancoo-order
-      
-      service-zuul-dev.yml
